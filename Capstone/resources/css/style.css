@@ -1,0 +1,613 @@
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #3c002b;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #640017;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/**Header**/
+
+header {
+  z-index: 5;
+  position:fixed;
+  display: flex;
+  height: 4rem;
+  width:100%;
+  padding-left:1.5rem;
+  margin-right:1.5rem;
+  margin-top:0;
+  align-items: center;
+  background-color:#bc944c;
+  color: #ffffff;
+  border-bottom: 1px solid #351f39;
+}
+
+header .mobileonly {
+  display: none;
+}
+
+header p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+}
+
+header span {
+  font-size: 1.5rem;
+  color: #704800;
+}
+
+/**Navigation**/
+
+nav {
+  display:flex;
+  width: 75%;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav li {
+  display:inline-block;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+nav li a {
+  text-decoration:none;
+  color:#000000;
+}
+
+
+nav a:hover {
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+nav a:active {
+    color: #fff;
+    border-radius: .55rem;
+    background-color: #a06700;
+    padding: 0.2rem;
+}
+
+/**Header Mobile Rules**/
+
+
+@media only screen and (max-width: 500px) {
+  header nav  {
+    display: none;
+  }
+
+  header p  {
+    display: none;
+  }
+
+  header .mobileonly {
+    display:inline;
+    padding-left: 6rem;
+  }
+
+  header {
+  padding-right: 1.5rem;
+}
+}
+
+
+/**Section 1: Interest Page**/
+
+.interest {
+  background-color: #f5efe5;
+  display:flex;
+  width:100%;
+  height:auto;
+  padding-top: 4rem;
+}
+
+.extralargeimagecontainer {
+  width:60%;
+  display: block;
+  height:auto;
+  padding:2rem 4rem 2rem 1.5rem;
+  float: right;
+}
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+}
+
+.interesttext {
+  width:40%;
+  display: block;
+  text-align: left;
+  align-content: center;
+  margin:auto;
+}
+
+.interesttext h3 {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+button {
+  background-color:#640017;
+  color: white;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transition-property: background-color;
+  transition-duration: 750ms;
+  background-color:#b10029;
+}
+
+button:active {
+  transition-property: background-color;
+  transition-duration: 500ms;
+  background-color:#a26673;
+}
+
+button:visited {
+  background-color:#625f5b;
+}
+
+
+/**S1: Tablet Rules**/
+
+@media only screen and (max-width: 1000px) and (min-width:500px) {
+  .interest {
+    flex-flow: column;
+  }
+
+  .extralargeimagecontainer {
+    width:100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+  }
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+
+}
+  .interesttext {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left:1rem;
+    height: auto;
+    text-align: left;
+  }
+
+}
+
+/**S1: Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .interest {
+    flex-flow: column;
+  }
+
+  .extralargeimagecontainer {
+    width:100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+  }
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+}
+
+  .interesttext {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left:1rem;
+    height: auto;
+    text-align: left;
+  }
+}
+
+
+/**Section 2: General Information**/
+
+.generalinformation {
+display: flex;
+flex-flow: row nowrap;
+background-color: #ece0cc;
+width:100%;
+height: auto;
+}
+
+.largeimagecontainer {
+  width:60%;
+  display: block;
+  height:auto;
+  padding:2rem 1.5rem 2rem 1.5rem;
+  float: left;
+  border-right: 1px solid #351f39;
+}
+
+.largeimage img {
+  width:95%;
+  height: auto;
+}
+
+.quote {
+  display:block;
+  align-items: center;
+  text-align: left;
+  padding: 2rem 0.5rem 1.5rem 1.5rem;
+}
+
+.quote h2 p h4 {
+  margin: 1.5rem 0.5rem 1.5rem 1.5rem;
+}
+
+.quote p {
+  margin-top:1.5rem;
+}
+
+.quote h4 {
+  margin-top: 4rem;
+}
+
+.columncontainer {
+  display:flex;
+  flex-flow: column nowrap;
+  width:40%;
+}
+
+.smallimagecontainer {
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  width:100%;
+  height: auto;
+  border-bottom: 1px solid #351f39;
+}
+
+.generalinformation .smallimagecontainer:last-child {
+  background-color: #a26673;
+}
+
+ .smallimage {
+   width: 35%;
+   height:auto;
+   float:left;
+   padding:2rem 1rem 1rem 1rem;
+ }
+
+ .smallimage img {
+   height:auto;
+   width:100%;
+ }
+
+ .textbit {
+   width: 65%;
+   text-align: left;
+   float:right;
+ }
+
+ .textbit h4 {
+   margin-top:1.5rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .textbit a{
+   color:#351f39;
+   text-decoration: none;
+ }
+
+ .textbit a:hover {
+   transition: color 200ms linear 50ms;
+   background-color: #e9c351;
+ }
+
+.textbit a:visited {
+  transition:color 100ms linear 50ms;
+  background-color: #ffc980;
+}
+
+  .mobileimage img{
+    display:none;
+}
+
+/**S2: Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .largeimagecontainer {
+    display:none;
+  }
+
+  .smallimage {
+  display:none;
+}
+
+  .mobileimage  img{
+    display: block;
+    width:100%;
+  }
+
+  .columncontainer {
+    width:100%;
+  }
+
+  .smallimagecontainer {
+    flex-flow:column;
+    border: none;
+  }
+
+  .textbit {
+    padding:1rem;
+    padding-right: 2rem;
+  }
+}
+
+
+/**Section 3: Courses**/
+
+.grid {
+  display:flex;
+  flex-flow:row wrap;
+  padding-bottom:2rem;
+  width:100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  background-color: #e2d1b2;
+}
+
+.grid h2 {
+  display:block;
+  width:100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mediumimagecontainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 28%;
+  height:auto;
+  text-align: left;
+  background-color: #f4e8c1;
+  color:#351f39;
+  margin: 1rem;
+
+}
+
+.mediumimage img {
+  width: 100%;
+  height:auto;
+}
+
+.gridtext {
+  display:block;
+  margin: 1rem;
+  text-align:left;
+  line-height: 1.5;
+}
+
+.gridtext h4{
+  font-weight: 200;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/**S3: Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .mediumimage {
+    display:none;
+  }
+
+  .mediumimagecontainer {
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    height: auto;
+    width: 100%
+  }
+
+  .gridtext h4 {
+  display: none;
+  }
+
+  .gridtext p {
+    display:none;
+  }
+}
+
+/**Section 4: Thesis**/
+
+.thesis {
+  background-color: #d9c299;
+  display:flex;
+  flex-flow: row wrap;
+  text-align: center;
+  width:100%;
+  height:auto;
+}
+
+.thesis h2 {
+  display:block;
+  width:100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.videoblock {
+  width:60%;
+  display: block;
+  height:auto;
+  float: left;
+}
+
+.video {
+  float:left;
+  width:100%;
+  height:auto;
+}
+
+.textblock {
+  width:90%;
+  display:block;
+  align-items: center;
+  text-align: left;
+  padding: 2rem 0.5rem 2rem 1.5rem;
+  margin: auto;
+}
+
+.thesis .columncontainer {
+  margin-top: 2rem;
+}
+
+.thesis .smallimagecontainer {
+  border: none;
+}
+
+.thesis .smallimagecontainer:last-child {
+  background-color: #a26673;
+}
+
+
+/**S4: Tablet**/
+
+@media only screen and (max-width: 1100px) and (min-width:500px) {
+  .thesis {
+    flex-flow: column wrap;
+    overflow:auto;
+  }
+
+.videoblock {
+  width: 100%;
+  height: auto;
+}
+
+.textblock {
+  width:90%;
+  height: auto;
+}
+
+.thesis .columncontainer {
+  width: 100%;
+  height: auto;
+  align-content: center;
+  }
+
+}
+
+/**S4: Mobile**/
+
+@media only screen and (max-width: 500px) {
+  .videoblock {
+    width:100%;
+    height: auto;
+  }
+
+  .video{
+    width:100%;
+    height: auto;
+  }
+
+  .textblock {
+    display:none;
+    }
+
+   .thesis.columncontainer {
+    display: none;
+  }
+
+  .thesis .smallimagecontainer {
+    display: none;
+  }
+
+}
+
+/**Footer**/
+
+footer {
+  background-color: #704800;
+  color: white;
+  padding-left: 1.5rem;
+  padding-top:1.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #351f39;
+}
+
+footer p {
+  float: left;
+  font-size: 1rem;
+}
+
+footer a {
+  display:inline;
+  float: right;
+  padding-right: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  transition: color 400ms linear 200ms;
+  color: #ffc980;  /**periwinkle**/
+}
+
+footer a:visited {
+  transition: color 400ms linear 50ms;
+  color: #351f39;  /**dark purple**/
+}
+
+/**Footer Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  footer a {
+    display: none;
+  }
+
+  footer p {
+    padding-bottom: 1rem;
+  }
+}
